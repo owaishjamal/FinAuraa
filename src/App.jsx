@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { WifiOff, Wifi } from "lucide-react";
 import { Header } from "@/components/Header";
 import { AccentBg } from "@/components/AccentBg";
+import { MLModelShowcase } from "@/components/MLModelShowcase";
 import { AuthModal } from "@/components/auth/AuthModal";
 import { Dashboard } from "@/components/tabs/Dashboard";
 import { Planner } from "@/components/tabs/Planner";
@@ -517,6 +518,9 @@ export default function NeuroFinDashboard() {
           <Wifi className="h-3.5 w-3.5"/> Connected to remote API.
         </div>
       )}
+
+      {/* ML Model Showcase */}
+      <MLModelShowcase colabUrl={import.meta?.env?.VITE_COLAB_URL} />
 
       <Tabs value={activeTab} onValueChange={setActiveTab} defaultValue="dashboard">
         <TabsList className="mt-2">

@@ -1,185 +1,229 @@
-# FinAura - Emotion-Aware Financial Wellness Platform
 
-**Win Hackathons with AI-Ready Math & Real-Time Analytics**
 
-FinAura is a cutting-edge financial wellness platform that combines financial metrics with emotional intelligence to provide holistic NeuroFinance Index (NFI) scoring. Built with React, Tailwind CSS, Supabase, and mathematical models ready for AI enhancement.
+---
 
-## 🚀 Features
+# 💫 **FinWiz — Emotion-Aware Financial Wellness Platform**
 
-### Core Functionality
-- **NeuroFinance Index (NFI)** - Combines financial health with emotional wellness
-- **Real-time Analytics** - Track your financial wellness over time
-- **Smart Nudges** - AI-ready personalized recommendations (currently using advanced math)
-- **CSV Insights** - Import transactions and get category breakdowns
-- **Goal Planning** - Simulate different scenarios and plan improvements
-- **Journal Tracking** - Maintain streaks for emotional wellness
+### *“Where Finance Meets Feelings — Smarter Money Decisions, Calmer Minds.”*
 
-### Backend & Data Persistence
-- **Supabase Integration** - Full backend with authentication
-- **User Profiles** - Persistent user preferences and financial state
-- **NFI History** - Track all computations over time
-- **Transaction Storage** - Save and analyze transaction history
-- **Achievements System** - Unlockable badges for milestones
-- **Analytics Dashboard** - Pre-computed summaries for performance
+---
 
-### User Experience
-- **Authentication** - Secure sign up/sign in
-- **Dark Mode** - Beautiful dark/light themes
-- **Multiple Themes** - Indigo, Emerald, Amber color palettes
-- **Responsive Design** - Works on all devices
-- **Offline Support** - Works locally without backend
+## 🚀 **Overview**
 
-## 🛠️ Setup Instructions
+**FinWiz** is a next-generation **emotion-aware financial wellness platform** that merges hard financial metrics with soft emotional signals.
+It computes a **NeuroFinance Index (NFI)** — a single, explainable score combining **financial stability** and **emotional resilience** — and delivers **stress-aware nudges** to help users make smarter, calmer financial decisions.
+
+Built with **React**, **Tailwind CSS**, and **Supabase**, FinWiz is designed to be **AI-ready**, **analytics-driven**, and **judge-grade demo-proof** for hackathons.
+
+---
+
+## 💡 **Why FinWiz?**
+
+Modern finance apps track spending.
+FinWiz goes further — it tracks **you**.
+
+Your emotions, sleep, and stress directly influence financial behavior.
+FinWiz bridges this gap with real-time analytics, emotional context, and actionable insights.
+
+---
+
+## ✨ **Key Features**
+
+### 🧠 **Core Intelligence**
+
+* **NeuroFinance Index (NFI)** — Combines finance & emotion into one holistic score
+* **Smart Nudges** — Personalized, reinforcement-learning-ready suggestions
+* **Explainability Dashboard** — Transparent contribution analysis for every factor
+* **Goal Simulator** — Project how behavior changes affect your NFI
+* **CSV Insights** — Paste your transactions and auto-analyze spending patterns
+
+### 💾 **Backend & Data Persistence**
+
+* **Supabase Integration** — Authentication, data storage, and analytics backend
+* **User Profiles** — Persisted preferences and tracked trends
+* **NFI History** — Time-series charting of user’s financial–emotional evolution
+* **Transaction Store** — Historical spending data for insights and trend analysis
+
+### 🎨 **User Experience**
+
+* **Dark/Light Modes** — Beautiful responsive UI
+* **Professional Themes** — Indigo, Emerald, and Amber color palettes
+* **Micro-Journaling** — Emotional journaling streaks with gamified feedback
+* **Offline Mode** — Works even without backend connectivity
+
+---
+
+## 🧮 **Mathematical & Behavioral Models**
+
+### 🧭 **NFI Formula**
+
+> **NFI = 0.65 × Financial Subscore + 0.35 × Emotional Subscore**
+
+**Financial Subscore (65%)**
+
+* Savings rate
+* Debt ratio
+* Spending volatility
+* Budget adherence
+
+**Emotional Subscore (35%)**
+
+* Mood sentiment (text analysis)
+* Stress level (0–10)
+* Sleep quality (0–10)
+
+### 📊 **Analytics Models**
+
+* **Sentiment Analysis** — Word-based scoring on positive/negative lexicons
+* **Volatility Measure** — Standard deviation of spend / mean spend (clamped 0–1)
+* **Trend Forecasting** — Rolling analysis of NFI improvements over time
+
+---
+
+## ⚙️ **Tech Stack**
+
+| Layer         | Tools & Frameworks                                          |
+| :------------ | :---------------------------------------------------------- |
+| Frontend      | React, Tailwind CSS, Shadcn/UI, Framer Motion               |
+| Backend       | Supabase (PostgreSQL + Auth)                                |
+| Data Science  | Python (Colab-ready simulation notebook)                    |
+| Deployment    | Vercel / Netlify                                            |
+| Visualization | Recharts + Framer Motion                                    |
+| Security      | Row Level Security (Supabase RLS), local sentiment fallback |
+
+---
+
+## 🧰 **Setup Instructions**
 
 ### Prerequisites
-- Node.js 18+ and npm/yarn
-- Supabase account (free tier works)
 
-### 1. Install Dependencies
+* Node.js ≥ 18
+* Supabase account (free tier works great)
+
+### 1️⃣ Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 2. Set Up Supabase
+### 2️⃣ Setup Supabase
 
-1. Create a new project at [supabase.com](https://supabase.com)
-2. Go to SQL Editor and run the migration file:
-   ```
-   supabase/migrations/001_initial_schema.sql
-   ```
-3. Get your Supabase URL and Anon Key from Project Settings > API
+* Create a new project at [supabase.com](https://supabase.com)
+* Run the migration file:
 
-### 3. Configure Environment
+  ```bash
+  supabase/migrations/001_initial_schema.sql
+  ```
+* Copy your API credentials:
 
-Create a `.env` file in the root directory:
+  ```
+  SUPABASE_URL = your_project_url
+  SUPABASE_ANON_KEY = your_anon_key
+  ```
+
+### 3️⃣ Configure Environment
+
+Create a `.env` file:
 
 ```env
 VITE_SUPABASE_URL=your_supabase_url
 VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
-Alternatively, you can set these in your HTML:
-
-```html
-<meta name="supabase-url" content="your_supabase_url" />
-<meta name="supabase-anon-key" content="your_supabase_anon_key" />
-```
-
-### 4. Run the Development Server
+### 4️⃣ Run Locally
 
 ```bash
 npm run dev
 ```
 
-The app will be available at `http://localhost:5173`
+Visit 👉 **[http://localhost:5173](http://localhost:5173)**
 
-### 5. Build for Production
+### 5️⃣ Build for Production
 
 ```bash
 npm run build
 ```
 
-## 📁 Project Structure
+---
+
+## 🧩 **Project Structure**
 
 ```
-FinAura/
+FinWiz/
 ├── src/
-│   ├── components/          # React components
-│   │   ├── auth/            # Authentication components
-│   │   ├── tabs/             # Tab components (Dashboard, Planner, etc.)
-│   │   └── ui/               # Shadcn UI components
-│   ├── lib/                  # Library configurations (Supabase, Auth)
-│   ├── services/             # Business logic services
-│   ├── utils/                # Utility functions (API, NFI, CSV, etc.)
-│   ├── constants/           # Constants (palettes, tests)
-│   └── App.jsx              # Main app component
+│   ├── components/
+│   │   ├── tabs/              # Dashboard, Planner, Insights
+│   │   ├── ui/                # Shadcn UI components
+│   │   └── auth/              # Authentication views
+│   ├── lib/                   # Supabase configs & services
+│   ├── utils/                 # NFI logic, CSV parser, helpers
+│   └── App.jsx                # Main application entry
 ├── supabase/
-│   └── migrations/           # Database migrations
-├── package.json
+│   └── migrations/            # Database schema
 └── README.md
 ```
 
-## 🎯 Hackathon Highlights
+---
 
-### What Makes This Hackathon-Worthy?
+## 🧠 **Hackathon Highlights**
 
-1. **AI-Ready Architecture**
-   - Mathematical models designed for AI enhancement
-   - Clean separation between computation and AI integration points
-   - Easy to add AI/ML models later
+### 💥 **Innovation**
 
-2. **Production-Ready Backend**
-   - Full Supabase integration with RLS (Row Level Security)
-   - Scalable database schema
-   - Real-time capabilities ready
+* Bridges **psychology + finance** with measurable NFI
+* AI-ready design (sentiment → emotion → recommendation)
+* Works **online + offline** with graceful fallbacks
 
-3. **Advanced Mathematical Models**
-   - NFI calculation with weighted factors
-   - Trend analysis using statistical methods
-   - Sentiment analysis algorithm
-   - Volatility calculations
+### 🪶 **Tech Elegance**
 
-4. **Excellent UX/UI**
-   - Smooth animations with Framer Motion
-   - Beautiful gradients and themes
-   - Responsive design
-   - Accessibility considerations
+* Supabase backend with RLS
+* Clean modular React architecture
+* Dynamic theme gradients and glassmorphism UI
 
-5. **Data-Driven Insights**
-   - Historical trend analysis
-   - Category spending breakdowns
-   - Personalized recommendations
-   - Achievement system
+### 📈 **Analytics Power**
 
-## 🧮 Mathematical Models
-
-### NFI Calculation
-The NeuroFinance Index combines:
-- **Finance Subscore (65%)**: Savings rate, debt health, volatility, adherence
-- **Emotion Subscore (35%)**: Mood, stress level, sleep quality
-
-### Sentiment Analysis
-Uses word frequency analysis on positive/negative word lists to derive sentiment scores.
-
-### Volatility Calculation
-Standard deviation of expenses normalized by mean, clamped between 0-1.
-
-### Trend Analysis
-Statistical analysis of historical data to predict patterns and generate recommendations.
-
-## 🔐 Security
-
-- Row Level Security (RLS) enabled on all tables
-- User data isolated by user_id
-- Secure authentication with Supabase Auth
-- No sensitive data in client-side code
-
-## 🚧 Future AI Enhancements
-
-The codebase is structured to easily add:
-- ML-based sentiment analysis
-- Predictive financial modeling
-- Personalized nudge optimization
-- Fraud detection on transactions
-- Pattern recognition in spending
-
-## 📝 License
-
-MIT License - Feel free to use for hackathons!
-
-## 🤝 Contributing
-
-This is a hackathon project. Contributions welcome!
-
-## 🏆 Hackathon Tips
-
-1. **Demo Flow**: Start with sign-up → Input financial data → See NFI → View insights → Show CSV import
-2. **Highlight Features**: Emphasize the combination of finance + emotion, Supabase backend, AI-ready architecture
-3. **Live Demo**: Show real-time data persistence, theme switching, responsive design
-4. **Explain Tech Stack**: React + Supabase + Mathematical Models ready for AI
+* Realtime charting
+* Explainable AI dashboard
+* Spend volatility simulation
 
 ---
 
-**Built with ❤️ for Hackathons**
+## 🤖 **Future Roadmap**
+
+* Transformer-based emotion inference (BERT / DistilBERT fine-tuning)
+* LSTM-based predictive financial forecasting
+* Personalized nudge ranking via reinforcement learning
+* Fraud detection and anomaly alerts
+
+---
+
+## 🔐 **Security**
+
+* Row-Level Security (RLS) per user
+* Authenticated Supabase API
+* No sensitive keys in client code
+* Local sentiment fallback for privacy
+
+---
+
+## 🧑‍💻 **Contributors**
+
+**Lead Developer:** Owaish Jamal (IIIT Allahabad)
+**Special Thanks:** Flipkart Grid Mentorship Community
+
+---
+
+## 🪄 **Demo Links**
+
+* 🌐 **Live App:** [https://fin-auraa.vercel.app/](https://fin-auraa.vercel.app/)
+* 💻 **GitHub Repo:** [https://github.com/owaishjamal/FinAuraa](https://github.com/owaishjamal/FinAuraa)
+* 📹 **Demo Video:** [Drive Link](https://drive.google.com/file/d/1q0WZizqB74YSmBeOAMQSqiQA_3tIbszW/view?usp=sharing)
+
+
+---
+
+## 🏆 **Build With Love for FinWiz 1.0**
+
+
+
+---
 
