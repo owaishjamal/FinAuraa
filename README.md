@@ -2,7 +2,7 @@
 
 ---
 
-# 💫 **FinWiz — Emotion-Aware Financial Wellness Platform**
+# 💫 **FinAura Neurofin— Emotion-Aware Financial Wellness Platform**
 
 ### *“Where Finance Meets Feelings — Smarter Money Decisions, Calmer Minds.”*
 
