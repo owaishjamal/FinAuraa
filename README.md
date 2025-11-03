@@ -17,13 +17,13 @@ Built with **React**, **Tailwind CSS**, and **Supabase**, FinWiz is designed to 
 
 ---
 
-## 💡 **Why FinWiz?**
+## 💡 **Why FinAura Neurofin?**
 
 Modern finance apps track spending.
-FinWiz goes further — it tracks **you**.
+FinAura Neurofin goes further — it tracks **you**.
 
 Your emotions, sleep, and stress directly influence financial behavior.
-FinWiz bridges this gap with real-time analytics, emotional context, and actionable insights.
+FinAura Neurofin bridges this gap with real-time analytics, emotional context, and actionable insights.
 
 ---
 
@@ -208,7 +208,7 @@ FinWiz/
 ## 🧑‍💻 **Contributors**
 
 **Lead Developer:** Owaish Jamal (IIIT Allahabad)
-**Special Thanks:** Flipkart Grid Mentorship Community
+**Special Thanks:** FinWiz 1.0 Team for this opportunity
 
 ---
 
