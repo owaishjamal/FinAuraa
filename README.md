@@ -10,7 +10,7 @@
 
 ## 🚀 **Overview**
 
-**FinWiz** is a next-generation **emotion-aware financial wellness platform** that merges hard financial metrics with soft emotional signals.
+**FinAura Neurofin** is a next-generation **emotion-aware financial wellness platform** that merges hard financial metrics with soft emotional signals.
 It computes a **NeuroFinance Index (NFI)** — a single, explainable score combining **financial stability** and **emotional resilience** — and delivers **stress-aware nudges** to help users make smarter, calmer financial decisions.
 
 Built with **React**, **Tailwind CSS**, and **Supabase**, FinWiz is designed to be **AI-ready**, **analytics-driven**, and **judge-grade demo-proof** for hackathons.
